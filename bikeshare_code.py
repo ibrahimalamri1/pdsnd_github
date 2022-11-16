@@ -116,7 +116,7 @@ def station_stats(df):
     
     end_station = df['End Station'].value_counts().idxmax()
     
-    print('most commonly used end station is: ',end_station)
+    print('the most common used end station is: ',end_station)
     
     # TO DO: display most frequent combination of start station and end station trip
     
@@ -136,7 +136,7 @@ def trip_duration_stats(df):
     
     # TO DO: display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print('total travel time is: ', total_travel_time/31556952,'Years')
+    print('total travel time is: ', total_travel_time/2629746,'Months')
     # TO DO: display mean travel time
     average_travel_time = df['Trip Duration'].mean()
     print('average travel time is: ', average_travel_time/60,'Mins')
